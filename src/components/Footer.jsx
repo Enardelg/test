@@ -15,7 +15,7 @@ const Footer = () => {
      // Renderizamos el pie de página con la clase "footer" y estilos de fondo y color según el tema
     <footer className="footer" style={{ background: theme.footBackground, color: theme.color }}>
       <div className="logo">
-        <p>Final Front III © todos los derechos reservados a Enrique Delgado y María Noé Martinez - 2023 </p>
+        <p>Final Front III © todos los derechos reservados a Enrique Delgado - 2023 </p>
       </div>
       <div className="divRedes">
         <a href="https://www.facebook.com/"> <img className="redes" src={facebook} alt="ico-fb" /> </a>

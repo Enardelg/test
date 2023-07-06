@@ -4,23 +4,46 @@ body {
   font-weight: 900;
 }
 
+h2{
+  margin: 0;
+}
+
+h3{
+  margin: 0;
+}
+
 /* -Sección Barra Nav*/
 nav {
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding: 3rem 2.5rem;
+  padding: 1.5rem;
+  margin-top: 0;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
   padding-right: 5rem;
+  height: 12vh;
+  align-items: center;
 }
 .divNav {
   display: flex;
   gap: 2rem;
-  margin-right: 12rem;
-  justify-content: space-between;
+  justify-content:space-around;
   align-items: center;
-  width: 200px;
+  width: 45%;
+}
 
+.link {
+  padding: 5px;
+  transition: 1.5s ease-in-out ;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.link:hover {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: inset 0 0 5px rgb(0, 0, 0.25), 0 0 5px rgb(0, 0, 2);
 }
 
 nav button {
@@ -28,24 +51,34 @@ nav button {
   width: 30px;
   height: 30px;
   padding: 0 5px 6px 0;
-  margin-right: 5rem;
 }
 
 .change {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 2rem;
+  margin-left: 4rem;
+  margin-bottom: 45px;
 }
 
 .cambiarModo {
   width: 3.3rem;
   border-radius: 12px;
-  margin-top: 10px;
+  margin-top: 3rem;
   cursor: pointer;
   box-shadow: inset 0 0 5px rgb(0, 0, 0.25), 0 0 5px rgb(0, 0, 2);
   border: 1px solid black;
 }
+
+.change-p {
+  margin: 0;
+  margin-top: 10px; 
+  text-align: center;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+}
+
 
 .dark {
   background-color: #12121296;
@@ -56,6 +89,10 @@ nav button {
   color: white;
 }
 
+.icono{
+  margin-left: 2.5rem;
+}
+
 .icono span {
   color: red;
 }
@@ -64,7 +101,7 @@ nav button {
 
 /*-Sección Home*/
 .home {
-  height: 128vh;
+  height: 96vh;
 }
 
 .favButton {
@@ -78,9 +115,8 @@ nav button {
 
 h1 {
   text-align: center;
-  padding-top: 3rem;
-  margin-top: 0;
-  margin-bottom: 4rem;
+  margin: 0;
+  padding: 2rem;
 }
 
 a {
@@ -105,12 +141,12 @@ a:hover {
   color: black;
   transition: transform 2s;
   width: 12%;
-  margin-bottom: 3rem;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
   border: 1px solid rgb(198, 198, 198);
   box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
+  gap: 1.5rem;
 }
 
 .card:hover {
@@ -224,12 +260,13 @@ form input {
   margin-bottom: 10px;
   height: 1.8rem;
   border-radius: 8px;
-  width: 50%;
+  width: 40%;
 }
 
 .submit {
   cursor: pointer;
   border: 1px solid black;
+  width: 10%;
 }
 
 .submit:hover {
@@ -244,7 +281,7 @@ form input {
   border-radius: 10px;
   color: white;
   font-size: bold;
-  width: 50%;
+  width: 51%;
   border: 1px solid black;
 }
 /*===> FIN Contacto*/
@@ -257,6 +294,7 @@ footer {
   padding: 2.5rem;
   height: 40px;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
+  height: 4vh;
 }
 
 .divRedes {

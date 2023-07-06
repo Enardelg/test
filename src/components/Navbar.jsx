@@ -30,12 +30,14 @@ const Navbar = () => {
         <h2 className='icono' style={{ color: theme.color }}><span>D</span>H Clínica Odontológica</h2>
       </Link>
       <div className='divNav'>
-        <img src="" alt="" />
-        <Link to={'/'} style={{ color: theme.color }}>Home</Link>
-        <Link to={'/contact'} style={{ color: theme.color }}>Contacto</Link>
-        <Link to={'/favs'} style={{ color: theme.color }}>Favoritos</Link>
+        <Link className='link' to={'/'} style={{ color: theme.color, background: theme.linkBackground}}>Home</Link>
+        <Link className='link' to={'/contact'} style={{ color: theme.color, background: theme.linkBackground }}>Contacto</Link>
+        <Link className='link' to={'/favs'} style={{ color: theme.color, background: theme.linkBackground}}>Favoritos</Link>
+      </div>
+      <div className='cambiar'>
         <button className='change' onClick={handleClick}>
           <img className='cambiarModo' src={cambiarModoImg} alt="Modo-claro" />
+          <p className='change-p'>Cambiar tema</p>
         </button>
       </div>
     </nav>
