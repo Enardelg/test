@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+/* -Sección Barra Nav*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
+  padding-right: 5rem;
+}
+.divNav {
+  display: flex;
+  gap: 2rem;
+  margin-right: 12rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+
+}
+
+nav button {
+  background-color: rgb(245, 243, 243);
+  width: 30px;
+  height: 30px;
+  padding: 0 5px 6px 0;
+  margin-right: 5rem;
+}
+
+.change {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.cambiarModo {
+  width: 3.3rem;
+  border-radius: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: inset 0 0 5px rgb(0, 0, 0.25), 0 0 5px rgb(0, 0, 2);
+  border: 1px solid black;
+}
+
+.dark {
+  background-color: #12121296;
+  color: white;
+}
+
+.dark>a {
+  color: white;
+}
+
+.icono span {
+  color: red;
+}
+
+/*===> FIN Barra Nav*/
+
+/*-Sección Home*/
+.home {
+  height: 128vh;
+}
+
+.favButton {
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: inset 0 0 6px rgb(0, 0, 0.25), 0 0 2px rgb(0, 0, 1);
+}
+
+h1 {
+  text-align: center;
+  padding-top: 3rem;
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #bf5a13;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgb(0, 0, 0.25), 0 0 5px rgb(0, 0, 1);
+  color: black;
+  transition: transform 2s;
+  width: 12%;
+  margin-bottom: 3rem;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgb(198, 198, 198);
+  box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
+}
+
+.card:hover {
+  transform: scale(1.1)
+}
+
+.card-grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  height: 20%;
+  width: 88%;
+  margin-bottom: 15px;
+}
+
+.perfil {
+  position: relative;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 5px rgb(0, 0, 0.25), 0 0 5px rgb(0, 0, 1);
+  overflow: hidden;
+  margin: auto;
+  padding: 5px;
+}
+
+.perfil img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  width: 100%;
+  margin-top: 2px;
+}
+
+.card h2 {
+  text-align: center;
+}
+/*===> FIN Home*/
+
+/*-Sección Detalle*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+  border: 1px solid #000000;
+  width: 80%;
+  justify-content: center;
+  margin-left: 9rem;
+  box-shadow: inset 0 0 7px rgb(0, 0, 0), 0 0 3px rgb(0, 0, 1);
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.detail {
+  padding-bottom: 25rem;
+  height: 32.75vh;
+}
+/*===> FIN Detalle*/
+
+/*-Sección Favoritos*/
+.favs {
+  padding-bottom: 20rem;
+  height: 41.5vh;
+}
+
+.favs p {
+  font-weight: 900;
+}
+/*===> FIN Favoritos*/
+
+/*-Sección Contacto*/
+.contact {
+  padding: 0 3rem 20rem 3rem;
+  height: 41.5vh;
+}
+
+.contact h2 {
+  margin-top: 0;
+  padding-top: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50rem;
+  height: 20rem;
+  margin: 0 auto;
+  margin-top: 6rem;
+  row-gap: 0.5rem;
+}
+
+form input {
+  margin-bottom: 10px;
+  height: 1.8rem;
+  border-radius: 8px;
+  width: 50%;
+}
+
+.submit {
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.submit:hover {
+  background-image: linear-gradient(to right top, #0ba311, #46b73d, #6acb5f, #8be080, #aaf4a1);
+  font-weight: bold;
+}
+
+.error {
+  background: linear-gradient(to top, rgb(200, 28, 28), rgb(247, 195, 195));
+  box-shadow: inset 0 0 5px rgb(0, 0, 0.5), 0 0 2px rgb(70, 67, 67);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: bold;
+  width: 50%;
+  border: 1px solid black;
+}
+/*===> FIN Contacto*/
+
+/*-Sección Footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 2.5rem;
+  height: 40px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
+}
+
+.divRedes {
+  display: inline-block;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+
+.redes {
+  max-height: 2rem;
+}
+/*===> FIN Footer*/
